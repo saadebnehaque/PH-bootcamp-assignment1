@@ -52,6 +52,21 @@ cardContent h3 {
     columns: #001931;
 }
 
+.noteContent h1,
+.secondBrainMainContant h1 {
+    color: #001931;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.card p,
+.noteContent p,
+.secondBrainMainContant p {
+    color: #627382;
+    line-height: 24px;
+    text-align: center;
+}
+
 /* sections */
 
 /* navbar */
@@ -147,21 +162,74 @@ nav {
     gap: 16px;
 }
 
-.noteContent h1 {
-    color: #001931;
-    font-size: 48px;
-    font-weight: 700;
-}
 
-.card p,
-.noteContent p {
-    color: #627382;
-    line-height: 24px;
-    text-align: center;
-}
 
 .cardContainer {
     display: flex;
     justify-content: space-between;
     gap: 24px;
+}
+
+/* Second Brain Section */
+
+.secondBrainContainer {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 120px;
+
+}
+
+.secondBrainImage {
+    height: 600px;
+    width: 600px;
+    border-radius: 12px;
+}
+
+.secondBrainImage img {
+    height: 100%;
+    border-radius: 12px;
+    background-position: center;
+}
+
+.secondBrainContant {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.secondBrainMainContant {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.secondBrainMainContant h4 {
+    font-weight: 500;
+    color: #469165;
+}
+
+.secondBrainMainContant p {
+    text-align: left;
+}
+
+.secondBrainListContant ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.secondBrainListContant ul li{
+color: #001931;
+font-weight: 500;
+display: flex;
+align-items: center;
+gap: 6px;
+}
+.secondBrainListContant ul li::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: url(./assets/CheckCircle.png);
+    
 }
