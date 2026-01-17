@@ -92,3 +92,6 @@ nav {
     align-items: center;
     gap: 16px;
 }
+.noteContainer {
+ background-color: #469165;
+}
