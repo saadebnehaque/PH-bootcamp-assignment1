@@ -21,6 +21,13 @@
     cursor: pointer;
 }
 
+.btn:hover {
+    background-color: #36754E;
+    transform: scale(101%);
+    box-shadow: 0 10px 20px 0 #00000015;
+    transition: all 0.3s ease-out;
+}
+
 .card {
     padding: 24px;
     display: flex;
@@ -53,7 +60,8 @@ cardContent h3 {
 }
 
 .noteContent h1,
-.secondBrainMainContant h1 {
+.secondBrainMainContant h1,
+.earlyAccessContent h1 {
     color: #001931;
     font-size: 48px;
     font-weight: 700;
@@ -61,7 +69,9 @@ cardContent h3 {
 
 .card p,
 .noteContent p,
-.secondBrainMainContant p {
+.secondBrainMainContant p,
+.earlyAccessContent p,
+.earlyAccessbtn p {
     color: #627382;
     line-height: 24px;
     text-align: center;
@@ -219,17 +229,54 @@ nav {
     flex-direction: column;
     gap: 16px;
 }
-.secondBrainListContant ul li{
-color: #001931;
-font-weight: 500;
-display: flex;
-align-items: center;
-gap: 6px;
+
+.secondBrainListContant ul li {
+    color: #001931;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
-.secondBrainListContant ul li::before{
+
+.secondBrainListContant ul li::before {
     content: "";
     height: 20px;
     width: 20px;
     background: url(./assets/CheckCircle.png);
-    
+}
+
+/* Early Access Section */
+
+.earlyAccess {
+    padding: 2px 120px 120px 120px;
+}
+
+.earlyAccessContainer {
+    background-color: #F7F6F2;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border-radius: 12px;
+
+}
+
+.earlyAccessContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+.earlyAccessbtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
