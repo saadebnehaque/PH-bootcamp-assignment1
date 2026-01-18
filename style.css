@@ -5,12 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{ 
+
+
+/* common class */
+.heroContainer,
+.noteContainer,
+.secondBrainContainer,
+.earlyAccess,
+footer {
     max-width: 1600px;
     margin: 0 auto;
 }
-
-/* common class */
 
 .btn {
     color: white;
@@ -76,7 +81,7 @@ cardContent h3 {
 .secondBrainMainContant p,
 .earlyAccessContent p,
 .earlyAccessbtn p,
-.copyRight p{
+.copyRight p {
     color: #627382;
     line-height: 24px;
     text-align: center;
@@ -285,33 +290,39 @@ nav {
     align-items: center;
     gap: 16px;
 }
-footer{
+
+footer {
     background-color: #001931;
     padding: 120px 120px 30px;
     display: flex;
     flex-direction: column;
     gap: 80px;
 }
-.fotterContent{
+
+.fotterContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.socialLinks{
+
+.socialLinks {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-.socialLinks h4{
-     color: white;
+
+.socialLinks h4 {
+    color: white;
     font-size: 20px;
     font-weight: 500;
 }
-.socialLinks ul{
+
+.socialLinks ul {
     list-style: none;
     display: flex;
     gap: 16px;
 }
-.copyRight p{
+
+.copyRight p {
     color: #FAFAFA;
 }
